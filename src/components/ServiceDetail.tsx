@@ -202,8 +202,8 @@ export default function ServiceDetail({ service }: { service: Service }) {
               subtitle={`Popular add-ons and companion services that pair well with ${service.shortName.toLowerCase()}.`}
             />
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {service.relatedServices.map((slug, i) => (
-                <ServiceCard key={slug} slug={slug} index={i} />
+              {service.relatedServices.map((slug) => (
+                <ServiceCard key={slug} slug={slug} />
               ))}
             </div>
           </div>
@@ -219,8 +219,8 @@ export default function ServiceDetail({ service }: { service: Service }) {
               subtitle="Useful reading to help you plan your project with confidence."
             />
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {service.relatedPosts.map((slug, i) => (
-                <BlogCard key={slug} slug={slug} index={i} />
+              {service.relatedPosts.map((slug) => (
+                <BlogCard key={slug} slug={slug} />
               ))}
             </div>
           </div>

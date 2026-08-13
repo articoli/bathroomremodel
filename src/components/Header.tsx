@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 import { services } from "@/data/services";
@@ -82,9 +83,14 @@ export default function Header() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 md:px-6">
           <Link href="/" className="flex items-center gap-2.5" aria-label="Eco Bathroom Remodel home">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-800 font-display text-lg font-bold text-gold-400">
-              EB
-            </span>
+            <Image
+              src="/favicon.svg"
+              alt=""
+              width={40}
+              height={40}
+              unoptimized
+              className="h-10 w-10 shrink-0"
+            />
             <span className="leading-tight">
               <span className="block font-display text-lg font-bold text-brand-900">
                 Eco Bathroom Remodel

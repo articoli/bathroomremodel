@@ -170,7 +170,7 @@ export default function PostDetail({ post }: { post: Post }) {
             </Link>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {more.map((p, i) => (
+            {more.map((p) => (
               <Link
                 key={p.slug}
                 href={`/${p.slug}`}
@@ -183,7 +183,6 @@ export default function PostDetail({ post }: { post: Post }) {
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
-                    priority={i === 0}
                   />
                 </div>
                 <div className="p-5">

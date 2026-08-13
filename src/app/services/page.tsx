@@ -30,8 +30,8 @@ export default function ServicesPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <ServiceCard key={s.slug} slug={s.slug} index={i} />
+            {services.map((s) => (
+              <ServiceCard key={s.slug} slug={s.slug} />
             ))}
           </div>
         </div>

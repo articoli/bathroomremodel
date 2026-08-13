@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/site";
 import { services } from "@/data/services";
 import { PhoneIcon, MapPinIcon, ClockIcon, MailIcon, LeafIcon, FacebookIcon } from "@/components/icons";
@@ -14,9 +15,14 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-800 font-display text-lg font-bold text-gold-400">
-                EB
-              </span>
+              <Image
+                src="/favicon.svg"
+                alt=""
+                width={40}
+                height={40}
+                unoptimized
+                className="h-10 w-10 shrink-0"
+              />
               <span className="font-display text-lg font-bold text-white">
                 Eco Bathroom Remodel
               </span>

@@ -127,7 +127,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/85 to-brand-900/40" />
         <div className="relative mx-auto w-full max-w-7xl px-5 py-20 md:px-6">
-          <Reveal>
+          <div className="animate-fade-up">
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
               <MapPinIcon className="h-3.5 w-3.5" />
               Plano, Texas &amp; Surrounding Areas
@@ -164,7 +164,7 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-          </Reveal>
+          </div>
         </div>
       </section>
 
@@ -258,8 +258,8 @@ export default function HomePage() {
             subtitle="From quick fixture upgrades to complete master bath renovations, one accountable team handles it all."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <ServiceCard key={s.slug} slug={s.slug} index={i} />
+            {services.map((s) => (
+              <ServiceCard key={s.slug} slug={s.slug} />
             ))}
           </div>
           <Reveal className="mt-10 text-center">
@@ -344,7 +344,6 @@ export default function HomePage() {
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
-                    priority={i < 4}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-950/70 via-transparent to-transparent opacity-80 transition group-hover:opacity-100" />
                   <span className="absolute bottom-3 left-3 right-3 text-xs font-semibold text-white md:text-sm">
@@ -450,8 +449,8 @@ export default function HomePage() {
             {[...posts]
               .sort((a, b) => b.date.localeCompare(a.date))
               .slice(0, 3)
-              .map((p, i) => (
-                <BlogCard key={p.slug} slug={p.slug} index={i} />
+              .map((p) => (
+                <BlogCard key={p.slug} slug={p.slug} />
               ))}
           </div>
           <Reveal className="mt-10 text-center">

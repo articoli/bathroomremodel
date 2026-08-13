@@ -4,13 +4,7 @@ import { px } from "@/lib/site";
 import { ArrowRightIcon } from "@/components/icons";
 import { services } from "@/data/services";
 
-export default function ServiceCard({
-  slug,
-  index,
-}: {
-  slug: string;
-  index: number;
-}) {
+export default function ServiceCard({ slug }: { slug: string }) {
   const service = services.find((s) => s.slug === slug);
   if (!service) return null;
 
@@ -26,7 +20,6 @@ export default function ServiceCard({
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition duration-500 group-hover:scale-105"
-          priority={index < 4}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-950/50 to-transparent" />
         <span className="absolute bottom-3 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-800">
