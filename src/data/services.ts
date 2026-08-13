@@ -21,7 +21,7 @@ export const services: Service[] = [
     shortName: "Complete Renovations",
     tagline: "Full-scale bathroom transformations, handled end to end",
     description:
-      "From demo to finishing touches, our complete bathroom renovation service delivers a brand-new bathroom designed around how you live in Plano, Texas.",
+      "From demo to finishing touches, our complete bathroom renovation service delivers a brand-new bathroom designed around your lifestyle, space, and budget.",
     image: 5825561,
     benefits: [
       "Single point of contact for the entire project",
@@ -83,7 +83,7 @@ export const services: Service[] = [
     shortName: "Tub to Shower",
     tagline: "Trade your old tub for a modern, low-maintenance shower",
     description:
-      "Convert an unused bathtub into a spacious, accessible walk-in shower that's easier to use, easier to clean, and better for your Plano home.",
+      "Convert an unused bathtub into a spacious, accessible walk-in shower that's easier to use, easier to clean, and a smart choice for families and older homeowners.",
     image: 6899351,
     benefits: [
       "Opens up the bathroom and adds usable floor space",
@@ -145,7 +145,7 @@ export const services: Service[] = [
     shortName: "Shower Installations",
     tagline: "New showers and full replacements built to last",
     description:
-      "Upgrade a tired shower or install a brand-new one with premium tile, waterproofing, and fixtures built for daily North Texas living.",
+      "Upgrade a tired shower or install a brand-new one with premium tile, waterproofing, and fixtures built for everyday use in North Texas homes.",
     image: 7005476,
     benefits: [
       "Brand-new shower built with modern waterproofing",
@@ -207,7 +207,7 @@ export const services: Service[] = [
     shortName: "Bathtubs",
     tagline: "Soaking tubs and replacements that make bath time the best part of the day",
     description:
-      "Install a new bathtub or replace a dated, worn-out tub with a modern soaking or claw-foot design for your Plano home.",
+      "Install a new bathtub or replace a dated, worn-out tub with a modern soaking or claw-foot design that fits your home.",
     image: 6957081,
     benefits: [
       "Choose from soaking, freestanding, alcove, and claw-foot tubs",
@@ -269,7 +269,7 @@ export const services: Service[] = [
     shortName: "Glass Enclosures",
     tagline: "Frameless glass showers that make your bathroom feel open and bright",
     description:
-      "Custom frameless and framed glass enclosures installed with precision for a clean, modern look in Plano bathrooms.",
+      "Custom frameless and framed glass enclosures installed with precision for a clean, modern look in your bathroom.",
     image: 7031840,
     benefits: [
       "Frameless designs that open up the whole room",
@@ -331,7 +331,7 @@ export const services: Service[] = [
     shortName: "Tile Flooring",
     tagline: "Beautiful, durable tile floors laid with precision",
     description:
-      "Porcelain, ceramic, and stone tile flooring installed for Plano bathrooms, waterproof, durable, and gorgeous.",
+      "Porcelain, ceramic, and stone tile flooring installed with precision, waterproof, durable, and gorgeous.",
     image: 8583810,
     benefits: [
       "Waterproof flooring that handles daily spills",
@@ -393,7 +393,7 @@ export const services: Service[] = [
     shortName: "Custom Vanities",
     tagline: "Vanities and storage designed around your stuff",
     description:
-      "Custom vanities, medicine cabinets, linen closets, and storage built to fit your space and declutter your Plano bathroom.",
+      "Custom vanities, medicine cabinets, linen closets, and storage built to fit your space and declutter your bathroom.",
     image: 5502253,
     benefits: [
       "Vanities built to your exact measurements",
@@ -455,7 +455,7 @@ export const services: Service[] = [
     shortName: "Plumbing & Fixtures",
     tagline: "Modern fixtures and reliable plumbing that feel better and use less",
     description:
-      "Upgrade faucets, shower systems, toilets, and supply lines with efficient fixtures installed by licensed Plano plumbers.",
+      "Upgrade faucets, shower systems, toilets, and supply lines with efficient fixtures installed by licensed plumbers.",
     image: 6653889,
     benefits: [
       "Water-efficient fixtures that lower utility bills",
@@ -517,7 +517,7 @@ export const services: Service[] = [
     shortName: "Lighting & Ventilation",
     tagline: "Brighter, healthier bathrooms with smart lighting and fresh air",
     description:
-      "Layer lighting for every task and install quiet, efficient ventilation that keeps your Plano bathroom fresh and mold-free.",
+      "Layer lighting for every task and install quiet, efficient ventilation that keeps your bathroom fresh and mold-free.",
     image: 7005279,
     benefits: [
       "Layered lighting: ambient, task, and accent",
@@ -579,7 +579,7 @@ export const services: Service[] = [
     shortName: "Accessibility",
     tagline: "Safe, comfortable bathrooms for every age and ability",
     description:
-      "Walk-in tubs, curbless showers, grab bars, and ADA-compliant updates that let Plano families age in place safely and independently.",
+      "Walk-in tubs, curbless showers, grab bars, and ADA-compliant updates that let families age in place safely and independently.",
     image: 5502260,
     benefits: [
       "Curbless and low-threshold showers for easy entry",
@@ -641,7 +641,7 @@ export const services: Service[] = [
     shortName: "Luxury Upgrades",
     tagline: "Spa-quality features for the bathroom of your dreams",
     description:
-      "Freestanding tubs, rain showers, heated floors, and premium finishes that turn a Plano bathroom into a personal spa.",
+      "Freestanding tubs, rain showers, heated floors, and premium finishes that turn your bathroom into a personal spa.",
     image: 9252956,
     benefits: [
       "Freestanding soaking tubs as a stunning centerpiece",

@@ -15,7 +15,6 @@ import {
   ShowerIcon,
   BathIcon,
   CabinetIcon,
-  StarIcon,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -95,7 +94,7 @@ const whyUs = [
   "Free in-home consultations and fixed-price quotes in writing",
   "One accountable crew, no finger-pointing subcontractors",
   "Eco-friendly fixtures and materials on every project",
-  "4.9-star average across hundreds of North Texas projects",
+  "10+ years serving North Texas homeowners",
 ];
 
 export default function ServiceAreasPage() {
@@ -139,7 +138,7 @@ export default function ServiceAreasPage() {
           <Reveal delay={0.1}>
             <div className="overflow-hidden rounded-3xl">
               <Image
-                src={px(7534282, 900, 700)}
+                src={px(7534282)}
                 alt={imageAlt(7534282, "Modern renovated bathroom in Plano, Texas")}
                 width={900}
                 height={700}
@@ -229,19 +228,17 @@ export default function ServiceAreasPage() {
             </Reveal>
             <Reveal delay={0.1}>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-                <div className="flex items-center gap-2 text-gold-400">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <StarIcon key={i} className="h-5 w-5" />
-                  ))}
-                </div>
-                <p className="mt-4 font-display text-2xl leading-snug text-white">
-                  "Eco Bathroom Remodel converted our unused tub into a gorgeous walk-in shower.
-                  They were on time every day, kept the house clean, and the price never changed."
+                <p className="font-display text-2xl leading-snug text-white">
+                  The same crew shows up every day, the same price stays in writing, and the
+                  same standard of work goes into every bathroom, whether it&apos;s in Plano
+                  or twenty minutes down the road.
                 </p>
-                <p className="mt-4 text-sm font-bold text-gold-400">Sarah M. · Plano, TX</p>
+                <p className="mt-4 text-sm font-bold text-gold-400">
+                  Your local bathroom remodeling team
+                </p>
                 <p className="mt-8 border-t border-white/10 pt-6 text-sm text-brand-200/80">
-                  Hear more from homeowners across {site.serviceArea.slice(0, 4).join(", ")} and
-                  beyond. Every project gets the same local attention and fixed-price honesty.
+                  Every project across {site.serviceArea.slice(0, 4).join(", ")} and beyond
+                  gets the same local attention and fixed-price honesty.
                 </p>
               </div>
             </Reveal>

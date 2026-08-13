@@ -30,7 +30,7 @@ export default function GalleryPage() {
               <Reveal key={g.id} delay={(i % 3) * 0.06}>
                 <figure className="group relative block overflow-hidden rounded-2xl">
                   <Image
-                    src={px(g.id, 700, i % 2 === 0 ? 500 : 620)}
+                    src={px(g.id)}
                     alt={`${imageAlt(g.id, g.title)} in ${g.location}`}
                     width={700}
                     height={i % 2 === 0 ? 500 : 620}

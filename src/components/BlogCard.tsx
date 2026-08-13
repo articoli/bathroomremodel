@@ -22,7 +22,7 @@ export default function BlogCard({ slug }: { slug: string }) {
     >
       <div className="relative h-44 overflow-hidden">
         <Image
-          src={px(post.image, 800, 500)}
+          src={px(post.image)}
           alt={imageAlt(post.image, post.title)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

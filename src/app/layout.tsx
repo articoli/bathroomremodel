@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
-import { site } from "@/lib/site";
+import { absoluteUrl, site } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -87,7 +87,7 @@ const localBusinessJsonLd = {
   url: site.url,
   telephone: site.phone,
   email: site.email,
-  image: site.ogImage,
+  image: absoluteUrl("/images/modern-marble-walk-in-shower.webp"),
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

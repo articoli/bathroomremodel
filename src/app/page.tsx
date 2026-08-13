@@ -15,14 +15,13 @@ import {
   PhoneIcon,
   CheckIcon,
   ArrowRightIcon,
-  StarIcon,
   ShieldIcon,
   LeafIcon,
   CalendarIcon,
   ClipboardIcon,
   HammerIcon,
   KeyIcon,
-  QuoteIcon,
+  ChevronDownIcon,
   MapPinIcon,
 } from "@/components/icons";
 
@@ -56,7 +55,7 @@ const whyChoose = [
   },
   {
     icon: ClipboardIcon,
-    title: "Fixed, Transparent Pricing",
+    title: "Fixed-Price Quotes",
     text: "You get a fixed-price quote in writing. No hourly surprises, no vague change orders, no hidden fees.",
   },
   {
@@ -93,24 +92,30 @@ const processSteps = [
   },
 ];
 
-const testimonials = [
+const faqs = [
   {
-    quote:
-      "Eco Bathroom Remodel converted our unused tub into a gorgeous walk-in shower. They were on time every day, kept the house clean, and the price never changed. Best money we've spent on the house.",
-    name: "Sarah M.",
-    location: "Plano, TX",
+    q: "How much does a bathroom remodel cost in Plano, TX?",
+    a: "The cost depends on the size of the bathroom, materials, plumbing changes, and the scope of work. After an in-home consultation, we provide a detailed fixed-price quote based on your specific project.",
   },
   {
-    quote:
-      "We did a full master bath renovation. The team's tile work is flawless and they caught a plumbing issue the builder's original install had missed. We plan to use them for the guest bath next.",
-    name: "James & Amy R.",
-    location: "Frisco, TX",
+    q: "How long does a typical bathroom remodel take?",
+    a: "Smaller updates can finish in a few days, while complete bathroom renovations typically take 3 to 4 weeks depending on demolition, plumbing, tile work, material availability, and project complexity.",
   },
   {
-    quote:
-      "As an older homeowner, the curbless shower and grab bars gave me my independence back. It looks so beautiful that guests don't even notice it's a safety remodel.",
-    name: "Margaret T.",
-    location: "Richardson, TX",
+    q: "Do I need a permit for a bathroom remodel in Plano?",
+    a: "Some bathroom remodeling projects require permits, particularly when plumbing, electrical, or structural work is involved. We can explain the requirements for your specific project and handle the process where applicable.",
+  },
+  {
+    q: "Can you convert my bathtub into a walk-in shower?",
+    a: "Yes. Tub-to-shower conversions are one of our most popular services. We can help you choose a layout, shower system, tile, glass enclosure, and accessibility features that fit your space.",
+  },
+  {
+    q: "Do you offer free estimates?",
+    a: "Yes. Homeowners can contact us to discuss their project and schedule a free in-home consultation for a detailed estimate.",
+  },
+  {
+    q: "Which areas do you serve besides Plano?",
+    a: "We serve Plano and nearby communities, including Frisco, Allen, McKinney, Richardson, Carrollton, Lewisville, The Colony, and surrounding North Texas areas.",
   },
 ];
 
@@ -119,7 +124,7 @@ export default function HomePage() {
     <>
       <section className="relative flex min-h-[88vh] items-center overflow-hidden bg-brand-950">
         <Image
-          src={px(7534282, 1600, 1000)}
+          src={px(7534282)}
           alt={imageAlt(7534282, "Modern renovated bathroom in Plano, Texas")}
           fill
           priority
@@ -139,10 +144,11 @@ export default function HomePage() {
               Bathroom Remodeling in <span className="text-gold-400">Plano, TX</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-brand-100/90 md:text-lg">
-              Eco Bathroom Remodel is a local Plano, TX bathroom remodeling company. From
-              complete renovations to tub-to-shower conversions and targeted remodels, our
-              craftsmen deliver premium workmanship, fixed transparent pricing, and
-              water-efficient upgrades that make your bathroom the best room in the house.
+              Eco Bathroom Remodel provides professional bathroom remodeling services for
+              homeowners in Plano, TX and nearby North Texas communities. Whether you&apos;re
+              planning a complete bathroom renovation, a tub-to-shower conversion, or targeted
+              upgrades, our team delivers quality craftsmanship, clear pricing, and practical
+              designs built around your home and lifestyle.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
@@ -174,10 +180,10 @@ export default function HomePage() {
       <section className="border-b border-slate-100 bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-10 md:grid-cols-4 md:px-6 md:py-12">
           {[
-            { value: "500+", label: "Bathrooms Remodeled" },
-            { value: "10+", label: "Years in North Texas" },
-            { value: "4.9★", label: "Average Client Rating" },
-            { value: "100%", label: "Fixed-Price Quotes" },
+            { value: "10+", label: "Years Serving North Texas" },
+            { value: "3–4", label: "Weeks for a Typical Full Remodel" },
+            { value: "30–50%", label: "Less Water with Efficient Fixtures" },
+            { value: "1", label: "Accountable Team, Demo to Finish" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <p className="font-display text-3xl font-bold text-brand-800 md:text-4xl">
@@ -197,7 +203,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="overflow-hidden rounded-3xl">
                 <Image
-                  src={px(5825561, 900, 700)}
+                  src={px(5825561)}
                   alt={imageAlt(5825561, "Completed bathroom renovation project in Plano, TX")}
                   width={900}
                   height={700}
@@ -206,11 +212,11 @@ export default function HomePage() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-4 hidden rounded-2xl bg-brand-900 p-6 shadow-xl md:block">
-                <p className="font-display text-3xl font-bold text-gold-400">10+</p>
+                <p className="font-display text-3xl font-bold text-gold-400">Free</p>
                 <p className="text-sm text-brand-100">
-                  Years remodeling
+                  In-home estimates
                   <br />
-                  North Texas homes
+                  &amp; written quotes
                 </p>
               </div>
             </div>
@@ -222,17 +228,23 @@ export default function HomePage() {
               title="Why Plano Homeowners Choose Eco Bathroom Remodel"
             />
             <p className="-mt-4 text-base leading-relaxed text-slate-600">
-              Remodeling shouldn't mean months of chaos. Our local team handles everything,
-              design, permits, demo, plumbing, tile, and fixtures, with daily updates, a clean
-              job site, and a price we put in writing. The result is a bathroom that's beautiful,
-              water-efficient, and built to last. Popular with Plano families: tub
-              to shower conversions, tile flooring, and custom vanities.
+              Plano homes vary widely, from established neighborhoods with older bathroom
+              layouts to newer homes with large primary suites. We help homeowners update
+              outdated tubs, improve storage, modernize showers, and choose durable materials
+              suited for everyday family use.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Every project starts with a free in-home consultation and a written scope of
+              work. You&apos;ll know what&apos;s included, what materials we&apos;ll use, and
+              what it costs before work begins. Then our own crew handles design, permits,
+              demo, plumbing, tile, and fixtures with daily updates and a clean job site.
             </p>
             <ul className="mt-6 space-y-3">
               {[
                 "Free in-home consultation and measurements",
-                "Water-saving fixtures that lower monthly bills",
-                "Real reviews from Plano, Frisco, and Allen homeowners",
+                "Written scope of work and fixed price before we start",
+                "Permits and code requirements handled where applicable",
+                "Water-saving fixtures sized for North Texas water use",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100">
@@ -283,7 +295,7 @@ export default function HomePage() {
             light
             eyebrow="Why Eco Bathroom Remodel"
             title="The Trusted Choice for Plano Bathrooms"
-            subtitle="We're not the biggest company in North Texas. We're the one homeowners call back, recommend, and trust with their biggest remodeling investment."
+            subtitle="Every project begins with a detailed consultation and a written scope of work. You'll know what's included, what materials are being used, and what to expect throughout the remodeling process."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {whyChoose.map((w, i) => (
@@ -342,7 +354,7 @@ export default function HomePage() {
                   className="group relative block aspect-[4/3] overflow-hidden rounded-2xl"
                 >
                   <Image
-                    src={px(g.id, 600, 450)}
+                    src={px(g.id)}
                     alt={imageAlt(g.id, g.title)}
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -369,32 +381,98 @@ export default function HomePage() {
       </section>
 
       <section className="bg-white py-16 md:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-6 lg:grid-cols-2">
+          <Reveal>
+            <SectionHeading
+              align="left"
+              eyebrow="Who We Are"
+              title="Local Bathroom Remodeling Team in Plano"
+            />
+            <div className="-mt-4 space-y-4 text-base leading-relaxed text-slate-600">
+              <p>
+                Eco Bathroom Remodel is a locally focused remodeling company serving
+                homeowners throughout Plano and nearby North Texas communities. Founded in
+                Plano in 2014, we grew by doing the work ourselves: licensed plumbing,
+                in-house tile, and finish work under one accountable team.
+              </p>
+              <p>
+                We work with homeowners from the initial consultation through the final
+                walkthrough, helping them plan functional, comfortable bathrooms that fit
+                their style, space, and budget.
+              </p>
+            </div>
+            <Link
+              href="/about"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-800 px-7 py-3.5 text-sm font-bold text-white transition hover:bg-brand-700"
+            >
+              Read Our Story
+              <ArrowRightIcon className="h-4 w-4" />
+            </Link>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="rounded-2xl bg-slate-50 p-8">
+              <ul className="space-y-4">
+                {[
+                  "One accountable in-house crew, no subcontractor roulette",
+                  "Licensed plumbing and fully insured crews",
+                  `Based in Plano at ${site.address.street}`,
+                  "Free estimates and fixed-price written quotes",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100">
+                      <CheckIcon className="h-3 w-3 text-brand-700" />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-16 md:py-24">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }}
+        />
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <SectionHeading
-            eyebrow="Testimonials"
-            title="Plano Homeowners Love Their New Bathrooms"
+            eyebrow="FAQs"
+            title="Frequently Asked Questions About Bathroom Remodeling in Plano"
+            subtitle="Straight answers to the questions homeowners ask us most."
           />
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.name} delay={i * 0.08}>
-                <figure className="flex h-full flex-col rounded-2xl border border-slate-100 bg-slate-50 p-7">
-                  <QuoteIcon className="h-8 w-8 text-gold-500" />
-                  <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">
-                    “{t.quote}”
-                  </blockquote>
-                  <figcaption className="mt-6 border-t border-slate-200 pt-4">
-                    <div className="flex items-center gap-1 text-gold-500">
-                      {Array.from({ length: 5 }).map((_, s) => (
-                        <StarIcon key={s} className="h-4 w-4" />
-                      ))}
-                    </div>
-                    <p className="mt-2 text-sm font-bold text-brand-900">{t.name}</p>
-                    <p className="text-xs text-slate-500">{t.location}</p>
-                  </figcaption>
-                </figure>
+          <div className="mx-auto max-w-3xl space-y-3">
+            {faqs.map((f) => (
+              <Reveal key={f.q}>
+                <details className="group rounded-2xl border border-slate-200 bg-white transition open:shadow-md">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-display text-lg text-brand-900 transition hover:text-brand-700 [&::-webkit-details-marker]:hidden">
+                    {f.q}
+                    <ChevronDownIcon className="h-5 w-5 shrink-0 text-gold-500 transition group-open:rotate-180" />
+                  </summary>
+                  <p className="px-6 pb-6 text-sm leading-relaxed text-slate-600">{f.a}</p>
+                </details>
               </Reveal>
             ))}
           </div>
+          <Reveal className="mt-10 text-center">
+            <p className="text-sm text-slate-500">
+              Have a different question? We&apos;re happy to help.{" "}
+              <a href={site.phoneHref} className="font-bold text-brand-700 hover:underline">
+                Call {site.phone}
+              </a>
+            </p>
+          </Reveal>
         </div>
       </section>
 

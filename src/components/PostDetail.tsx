@@ -72,7 +72,7 @@ export default function PostDetail({ post }: { post: Post }) {
         <div className="mx-auto max-w-3xl px-5 md:px-6">
           <div className="overflow-hidden rounded-3xl">
             <Image
-              src={px(post.image, 1200, 700)}
+              src={px(post.image)}
               alt={imageAlt(post.image, post.title)}
               width={1200}
               height={700}
@@ -179,7 +179,7 @@ export default function PostDetail({ post }: { post: Post }) {
               >
                 <div className="relative h-36 overflow-hidden">
                   <Image
-                    src={px(p.image, 600, 400)}
+                    src={px(p.image)}
                     alt={imageAlt(p.image, p.title)}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

@@ -16,7 +16,7 @@ export default function ServiceCard({ slug }: { slug: string }) {
     >
       <div className="relative h-48 overflow-hidden">
         <Image
-          src={px(service.image, 800, 600)}
+          src={px(service.image)}
           alt={imageAlt(service.image, service.name)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

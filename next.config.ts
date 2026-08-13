@@ -5,15 +5,6 @@ import { posts } from "./src/data/posts";
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname),
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.pexels.com",
-        pathname: "/photos/**",
-      },
-    ],
-  },
   async redirects() {
     const serviceRedirects = services.map((s) => ({
       source: `/services/${s.slug}`,

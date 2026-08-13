@@ -15,7 +15,7 @@ import {
   PhoneIcon,
   ArrowRightIcon,
   ShieldIcon,
-  StarIcon,
+  ClipboardIcon,
   HammerIcon,
 } from "@/components/icons";
 
@@ -48,7 +48,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
             <Reveal>
               <div className="overflow-hidden rounded-3xl">
                 <Image
-                  src={px(service.image, 1000, 700)}
+                  src={px(service.image)}
                   alt={imageAlt(service.image, `${service.name} in Plano, TX`)}
                   width={1000}
                   height={700}
@@ -143,7 +143,10 @@ export default function ServiceDetail({ service }: { service: Service }) {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               ...service.whyChoose.map((w) => ({ icon: ShieldIcon, text: w })),
-              { icon: StarIcon, text: `4.9-star average across hundreds of ${service.shortName.toLowerCase()} projects` },
+              {
+                icon: ClipboardIcon,
+                text: "Written fixed-price quote before any work begins",
+              },
             ].map((item, i) => (
               <Reveal key={item.text} delay={(i % 4) * 0.08}>
                 <div className="h-full rounded-2xl border border-white/10 bg-white/5 p-6">

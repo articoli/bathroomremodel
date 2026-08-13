@@ -76,8 +76,8 @@ export default function AboutPage() {
                 ourselves, and we put a fixed price in writing before a single wall comes down.
               </p>
               <p>
-                Today we've remodeled more than 500 bathrooms across Plano, Frisco, Allen,
-                McKinney, Richardson, and the surrounding Dallas–Fort Worth area. From{" "}
+                Today we&apos;ve remodeled bathrooms across Plano, Frisco, Allen, McKinney,
+                Richardson, and the surrounding Dallas–Fort Worth area. From{" "}
                 <Link href="/complete-bathroom-renovations" className="font-semibold text-brand-700 underline decoration-gold-500 underline-offset-2 hover:text-brand-800">
                   complete renovations
                 </Link>{" "}
@@ -97,7 +97,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src={px(5502253, 700, 900)}
+                src={px(5502253)}
                 alt={imageAlt(5502253, "Custom bathroom vanity built by Eco Bathroom Remodel")}
                 width={700}
                 height={900}
@@ -106,7 +106,7 @@ export default function AboutPage() {
               />
               <div className="flex flex-col gap-4">
                 <Image
-                  src={px(7031840, 700, 500)}
+                  src={px(7031840)}
                   alt={imageAlt(7031840, "Frameless glass shower installation in Plano")}
                   width={700}
                   height={500}
@@ -114,7 +114,7 @@ export default function AboutPage() {
                   sizes="(max-width: 1024px) 50vw, 25vw"
                 />
                 <Image
-                  src={px(7005476, 700, 500)}
+                  src={px(7005476)}
                   alt={imageAlt(7005476, "New shower system installed by our team")}
                   width={700}
                   height={500}
