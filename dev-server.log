@@ -1,0 +1,29 @@
+
+> bathroomremodel@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.117:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 1793ms (1490 modules)
+ GET / 200 in 2807ms
+ GET / 200 in 401ms
+ GET / 200 in 645ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 754ms (855 modules)
+ GET /favicon.ico 200 in 960ms
+ GET / 200 in 958ms
+ GET /favicon.ico 200 in 15ms
+ GET / 200 in 1616ms
+ GET /favicon.ico 200 in 39ms
+ GET / 200 in 688ms
+ GET / 200 in 994ms
+ GET / 200 in 1143ms
+ ○ Compiling /service-areas ...
+ ✓ Compiled /service-areas in 2.6s (1507 modules)
+ GET /service-areas 200 in 3348ms
+ GET /service-areas 200 in 276ms
