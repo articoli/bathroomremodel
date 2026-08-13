@@ -42,12 +42,13 @@ await Promise.all([
   writeFile(join(root, "public", "favicon-16x16.png"), pngs[0]),
   writeFile(join(root, "public", "favicon-32x32.png"), pngs[1]),
   writeFile(join(root, "public", "favicon-48x48.png"), pngs[2]),
-  writeFile(join(root, "public", "apple-touch-icon.png"), pngs[3]),
-  writeFile(join(root, "public", "favicon.ico"), buildIco([
+  writeFile(join(root, "src", "app", "apple-icon.png"), pngs[3]),
+  writeFile(join(root, "src", "app", "icon.ico"), buildIco([
     { size: 16, png: pngs[0] },
     { size: 32, png: pngs[1] },
     { size: 48, png: pngs[2] },
   ])),
+  writeFile(join(root, "src", "app", "icon.svg"), svg),
 ]);
 
-console.log("Favicon assets generated in public/");
+console.log("Favicon assets generated in public/ and src/app/");
