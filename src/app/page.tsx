@@ -122,9 +122,11 @@ export default function HomePage() {
           alt="Modern renovated bathroom in Plano, Texas"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
-          className="object-cover opacity-60"
+          className="object-cover"
         />
+        <div className="absolute inset-0 bg-brand-950/40" />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/85 to-brand-900/40" />
         <div className="relative mx-auto w-full max-w-7xl px-5 py-20 md:px-6">
           <div className="animate-fade-up">

@@ -95,7 +95,7 @@ export default function Header() {
               <span className="block font-display text-lg font-bold text-brand-900">
                 Eco Bathroom Remodel
               </span>
-              <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-600">
+              <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-700">
                 Plano, TX
               </span>
             </span>
