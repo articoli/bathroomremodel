@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { px, site } from "@/lib/site";
+import { imageAlt } from "@/data/imageAlts";
 import renderInline from "@/lib/richText";
 import type { Service } from "@/data/services";
 import PageHeader from "@/components/PageHeader";
@@ -48,7 +49,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
               <div className="overflow-hidden rounded-3xl">
                 <Image
                   src={px(service.image, 1000, 700)}
-                  alt={`${service.name} in Plano, TX`}
+                  alt={imageAlt(service.image, `${service.name} in Plano, TX`)}
                   width={1000}
                   height={700}
                   priority

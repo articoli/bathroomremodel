@@ -5,6 +5,8 @@ export const site = {
   phone: "+1 (972) 391-8227",
   phoneHref: "tel:+19723918227",
   email: "info@bathroomremodelplano.com",
+  ogImage:
+    "https://images.pexels.com/photos/7534282/pexels-photo-7534282.jpeg?w=1200&h=630&fit=crop&auto=compress&cs=tinysrgb",
   address: {
     street: "5700 West Plano Pkwy, Suite 1000",
     city: "Plano",

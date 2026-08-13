@@ -13,9 +13,11 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Services in Plano, TX",
+  title: {
+    absolute: "Bathroom Remodeling Services in Plano, TX",
+  },
   description:
-    "Explore our bathroom services: complete renovations, tub to shower conversions, tile, glass enclosures, custom vanities, accessibility upgrades & more in Plano, TX.",
+    "Bathroom remodeling services in Plano, TX: complete renovations, tub to shower conversions, tile, glass enclosures, custom vanities & more.",
   alternates: { canonical: "/services" },
 };
 

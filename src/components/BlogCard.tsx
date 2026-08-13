@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { px } from "@/lib/site";
+import { imageAlt } from "@/data/imageAlts";
 import { posts } from "@/data/posts";
 import { CalendarIcon, ArrowRightIcon } from "@/components/icons";
 
@@ -22,7 +23,7 @@ export default function BlogCard({ slug }: { slug: string }) {
       <div className="relative h-44 overflow-hidden">
         <Image
           src={px(post.image, 800, 500)}
-          alt={post.title}
+          alt={imageAlt(post.image, post.title)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition duration-500 group-hover:scale-105"

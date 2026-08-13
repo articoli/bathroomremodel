@@ -601,7 +601,7 @@ export const posts: Post[] = [
     slug: "how-to-hire-bathroom-remodeler-plano",
     title: "How to Hire a Bathroom Remodeler in Plano, TX: 10 Questions to Ask",
     excerpt:
-      "Licenses, insurance, written quotes, and timelines: the questions that separate a great bathroom remodeler from a costly mistake, with a practical hiring checklist for Plano homeowners.",
+      "Licenses, insurance, written quotes, and timelines: the questions that separate a great Plano bathroom remodeler from a costly mistake.",
     date: "2026-06-18",
     readTime: "8 min read",
     image: 4300078,
@@ -1030,6 +1030,24 @@ export const posts: Post[] = [
     ],
   },
 ];
+
+export const postSeo: Record<string, string> = {
+  "cost-of-bathroom-remodel-in-plano-tx": "Bathroom Remodel Cost in Plano, TX: 2026 Guide",
+  "tub-to-shower-conversion-benefits": "7 Benefits of a Tub to Shower Conversion",
+  "how-to-choose-bathroom-tiles": "How to Choose the Right Bathroom Tiles",
+  "small-bathroom-remodel-ideas": "13 Small Bathroom Remodel Ideas for Tight Spaces",
+  "accessibility-bathroom-features": "Aging in Place: Bathroom Features That Keep Families Safe",
+  "bathroom-lighting-guide": "The Complete Guide to Bathroom Lighting",
+  "bathroom-remodel-timeline": "Bathroom Remodel Timeline: Week by Week",
+  "water-saving-bathroom-upgrades": "Water-Saving Bathroom Upgrades That Pay Off",
+  "common-bathroom-remodel-mistakes": "9 Common Bathroom Remodel Mistakes to Avoid",
+  "how-to-hire-bathroom-remodeler-plano": "How to Hire a Bathroom Remodeler in Plano, TX",
+  "walk-in-shower-vs-bathtub": "Walk-In Shower vs. Bathtub: How to Choose",
+  "bathroom-countertop-materials-guide": "Bathroom Countertop Materials: Quartz, Granite & More",
+  "master-bathroom-remodel-ideas": "Master Bathroom Remodel Ideas: Plan a Suite You'll Use",
+  "prevent-mold-and-mildew-bathroom": "How to Prevent Mold and Mildew in Your Bathroom",
+  "bathroom-remodel-increase-home-value": "Does a Bathroom Remodel Increase Home Value?",
+};
 
 export function getPost(slug: string) {
   return posts.find((p) => p.slug === slug);

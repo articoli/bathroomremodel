@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { px, site } from "@/lib/site";
+import { imageAlt } from "@/data/imageAlts";
 import PageHeader from "@/components/PageHeader";
 import CtaSection from "@/components/CtaSection";
 import SectionHeading from "@/components/SectionHeading";
@@ -15,9 +16,11 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: {
+    absolute: "About Eco Bathroom Remodel | Plano, TX",
+  },
   description:
-    "Meet Eco Bathroom Remodel, Plano's local bathroom remodeling team. Licensed, insured, and committed to eco-friendly, beautifully built bathrooms across North Texas.",
+    "Plano's local bathroom remodeling team: licensed, insured, and committed to eco-friendly, beautifully built bathrooms across North Texas.",
   alternates: { canonical: "/about" },
 };
 
@@ -95,7 +98,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               <Image
                 src={px(5502253, 700, 900)}
-                alt="Custom bathroom vanity built by Eco Bathroom Remodel"
+                alt={imageAlt(5502253, "Custom bathroom vanity built by Eco Bathroom Remodel")}
                 width={700}
                 height={900}
                 className="h-full w-full rounded-2xl object-cover"
@@ -104,7 +107,7 @@ export default function AboutPage() {
               <div className="flex flex-col gap-4">
                 <Image
                   src={px(7031840, 700, 500)}
-                  alt="Frameless glass shower installation in Plano"
+                  alt={imageAlt(7031840, "Frameless glass shower installation in Plano")}
                   width={700}
                   height={500}
                   className="w-full rounded-2xl object-cover"
@@ -112,7 +115,7 @@ export default function AboutPage() {
                 />
                 <Image
                   src={px(7005476, 700, 500)}
-                  alt="New shower system installed by our team"
+                  alt={imageAlt(7005476, "New shower system installed by our team")}
                   width={700}
                   height={500}
                   className="w-full rounded-2xl object-cover"

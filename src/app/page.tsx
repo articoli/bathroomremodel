@@ -5,6 +5,7 @@ import { px, site } from "@/lib/site";
 import { services } from "@/data/services";
 import { posts } from "@/data/posts";
 import { galleryItems } from "@/data/gallery";
+import { imageAlt } from "@/data/imageAlts";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
@@ -27,10 +28,10 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bathroom remodel Plano TX | Expert contractors & renovators",
+    absolute: "Bathroom Remodeling in Plano, TX | Eco Bathroom Remodel",
   },
   description:
-    "Eco Bathroom Remodel is a local Plano, TX bathroom remodeling company. Complete renovations, tub to shower conversions, tile, custom vanities & more, with fixed pricing you can trust. Call (972) 391-8227 for a free quote.",
+    "Plano, TX bathroom remodeling done right: complete renovations, tub-to-shower conversions, tile, custom vanities, and fixed pricing. Call (972) 391-8227.",
   alternates: { canonical: "/" },
 };
 
@@ -119,7 +120,7 @@ export default function HomePage() {
       <section className="relative flex min-h-[88vh] items-center overflow-hidden bg-brand-950">
         <Image
           src={px(7534282, 1600, 1000)}
-          alt="Modern renovated bathroom in Plano, Texas"
+          alt={imageAlt(7534282, "Modern renovated bathroom in Plano, Texas")}
           fill
           priority
           fetchPriority="high"
@@ -197,7 +198,7 @@ export default function HomePage() {
               <div className="overflow-hidden rounded-3xl">
                 <Image
                   src={px(5825561, 900, 700)}
-                  alt="Completed bathroom renovation project in Plano, TX"
+                  alt={imageAlt(5825561, "Completed bathroom renovation project in Plano, TX")}
                   width={900}
                   height={700}
                   className="h-full w-full object-cover"
@@ -342,7 +343,7 @@ export default function HomePage() {
                 >
                   <Image
                     src={px(g.id, 600, 450)}
-                    alt={g.title}
+                    alt={imageAlt(g.id, g.title)}
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-105"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { px, site } from "@/lib/site";
+import { imageAlt } from "@/data/imageAlts";
 import PageHeader from "@/components/PageHeader";
 import CtaSection from "@/components/CtaSection";
 import SectionHeading from "@/components/SectionHeading";
@@ -18,9 +19,11 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Service Areas",
+  title: {
+    absolute: "Bathroom Remodeling Service Areas | Plano, TX",
+  },
   description:
-    "Bathroom remodeling across Plano, Frisco, McKinney, Allen, Richardson, and all of North Texas. Local pros, fixed pricing, and free in-home quotes. Call (972) 391-8227.",
+    "Bathroom remodeling across Plano, Frisco, McKinney, Allen, Richardson, and all of North Texas. Local pros, fixed pricing, and free in-home quotes.",
   alternates: { canonical: "/service-areas" },
 };
 
@@ -137,7 +140,7 @@ export default function ServiceAreasPage() {
             <div className="overflow-hidden rounded-3xl">
               <Image
                 src={px(7534282, 900, 700)}
-                alt="Modern renovated bathroom in Plano, Texas"
+                alt={imageAlt(7534282, "Modern renovated bathroom in Plano, Texas")}
                 width={900}
                 height={700}
                 className="h-full w-full object-cover"

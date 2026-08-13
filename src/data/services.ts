@@ -699,6 +699,20 @@ export const services: Service[] = [
   },
 ];
 
+export const serviceSeo: Record<string, string> = {
+  "complete-bathroom-renovations": "Complete Bathroom Renovations in Plano, TX",
+  "tub-to-shower-conversion": "Tub to Shower Conversion in Plano, TX | Eco Bathroom Remodel",
+  "shower-installations-replacements": "Shower Installations & Replacements in Plano, TX",
+  "bathtub-installations-replacements": "Bathtub Installation & Replacement in Plano, TX",
+  "glass-enclosure-installations": "Glass Enclosure Installations in Plano, TX",
+  "tile-flooring-installation": "Tile Flooring Installation in Plano, TX",
+  "custom-vanity-and-storage": "Custom Vanity & Storage in Plano, TX | Eco Bathroom Remodel",
+  "plumbing-and-fixture-upgrades": "Plumbing & Fixture Upgrades in Plano, TX",
+  "bathroom-lighting-and-ventilation": "Bathroom Lighting & Ventilation in Plano, TX",
+  "accessibility-modifications": "Accessibility Modifications in Plano, TX",
+  "luxury-bathroom-upgrades": "Luxury Bathroom Upgrades in Plano, TX | Eco Bathroom Remodel",
+};
+
 export function getService(slug: string) {
   return services.find((s) => s.slug === slug);
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { px, site } from "@/lib/site";
+import { imageAlt } from "@/data/imageAlts";
 import renderInline from "@/lib/richText";
 import type { Post } from "@/data/posts";
 import { posts } from "@/data/posts";
@@ -72,7 +73,7 @@ export default function PostDetail({ post }: { post: Post }) {
           <div className="overflow-hidden rounded-3xl">
             <Image
               src={px(post.image, 1200, 700)}
-              alt={post.title}
+              alt={imageAlt(post.image, post.title)}
               width={1200}
               height={700}
               priority
@@ -179,7 +180,7 @@ export default function PostDetail({ post }: { post: Post }) {
                 <div className="relative h-36 overflow-hidden">
                   <Image
                     src={px(p.image, 600, 400)}
-                    alt={p.title}
+                    alt={imageAlt(p.image, p.title)}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition duration-500 group-hover:scale-105"

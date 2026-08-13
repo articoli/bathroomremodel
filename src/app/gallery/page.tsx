@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { px } from "@/lib/site";
 import { galleryItems } from "@/data/gallery";
+import { imageAlt } from "@/data/imageAlts";
 import PageHeader from "@/components/PageHeader";
 import CtaSection from "@/components/CtaSection";
 import Reveal from "@/components/Reveal";
@@ -30,7 +31,7 @@ export default function GalleryPage() {
                 <figure className="group relative block overflow-hidden rounded-2xl">
                   <Image
                     src={px(g.id, 700, i % 2 === 0 ? 500 : 620)}
-                    alt={`${g.title} in ${g.location}`}
+                    alt={`${imageAlt(g.id, g.title)} in ${g.location}`}
                     width={700}
                     height={i % 2 === 0 ? 500 : 620}
                     className="w-full object-cover transition duration-500 group-hover:scale-105"
