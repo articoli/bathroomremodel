@@ -4,6 +4,7 @@ import { services } from "./src/data/services";
 import { posts } from "./src/data/posts";
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   outputFileTracingRoot: path.join(__dirname),
   async redirects() {
     const serviceRedirects = services.map((s) => ({

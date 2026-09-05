@@ -1,0 +1,8 @@
+{
+  "name": "Eco Bathroom Remodel",
+  "description": "Bathroom remodeling services website for Eco Bathroom Remodel in Plano, TX",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
