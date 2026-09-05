@@ -18,17 +18,17 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const title = "Eco Bathroom Remodel | Bathroom Remodeling in Plano, TX";
-const description =
-  "Plano's trusted bathroom remodeling company. Bathroom renovations, tub to shower conversions, tile, vanities & more. Free quotes. Call (972) 391-8227.";
+const siteTitle = "Bathroom remodeling Plano TX | Eco Bathroom Remodel";
+const siteDescription =
+  "Bathroom remodeling Plano TX made easy. Eco Bathroom Remodel delivers stylish, high-quality bathroom renovations tailored to your home and budget.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: title,
+    default: siteTitle,
     template: "%s | Eco Bathroom Remodel",
   },
-  description,
+  description: siteDescription,
   keywords: [
     "bathroom remodel Plano TX",
     "bathroom remodeling Plano",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title,
-    description,
+    title: siteTitle,
+    description: siteDescription,
     locale: "en_US",
     images: [
       {
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
+    title: siteTitle,
+    description: siteDescription,
     images: [site.ogImage],
   },
   robots: {
@@ -71,30 +71,47 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessJsonLd = {
+const siteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  name: site.legalName,
-  url: site.url,
-  telephone: site.phone,
-  email: site.email,
-  image: absoluteUrl("/images/modern-marble-walk-in-shower.webp"),
-  priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: site.address.street,
-    addressLocality: site.address.city,
-    addressRegion: site.address.state,
-    postalCode: site.address.zip,
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 33.0516,
-    longitude: -96.7769,
-  },
-  openingHours: ["Mo-Sa 07:00-19:00"],
-  areaServed: site.serviceArea.map((a) => ({ "@type": "City", name: a })),
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${site.url}/#website`,
+      url: site.url,
+      name: site.name,
+      description: siteDescription,
+      publisher: {
+        "@id": `${site.url}/#localbusiness`,
+      },
+    },
+    {
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@id": `${site.url}/#localbusiness`,
+      name: site.name,
+      legalName: site.legalName,
+      description: siteDescription,
+      url: site.url,
+      telephone: site.phone,
+      email: site.email,
+      image: absoluteUrl("/images/modern-marble-walk-in-shower.webp"),
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        addressLocality: site.address.city,
+        addressRegion: site.address.state,
+        postalCode: site.address.zip,
+        addressCountry: "US",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 33.0516,
+        longitude: -96.7769,
+      },
+      openingHours: ["Mo-Sa 07:00-19:00"],
+      areaServed: site.serviceArea.map((a) => ({ "@type": "City", name: a })),
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -107,7 +124,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>

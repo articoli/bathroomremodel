@@ -25,13 +25,38 @@ import {
   MapPinIcon,
 } from "@/components/icons";
 
+const homeTitle = "Bathroom remodeling Plano TX | Eco Bathroom Remodel";
+const homeDescription =
+  "Bathroom remodeling Plano TX made easy. Eco Bathroom Remodel delivers stylish, high-quality bathroom renovations tailored to your home and budget.";
+
 export const metadata: Metadata = {
   title: {
-    absolute: "Bathroom Remodeling in Plano, TX | Eco Bathroom Remodel",
+    absolute: homeTitle,
   },
-  description:
-    "Plano, TX bathroom remodeling done right: complete renovations, tub-to-shower conversions, tile, custom vanities, and fixed pricing. Call (972) 391-8227.",
+  description: homeDescription,
   alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    siteName: site.name,
+    title: homeTitle,
+    description: homeDescription,
+    locale: "en_US",
+    images: [
+      {
+        url: site.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Modern bathroom with marble walls and glass walk-in shower",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: homeTitle,
+    description: homeDescription,
+    images: [site.ogImage],
+  },
 };
 
 const trustBadges = [
@@ -119,9 +144,42 @@ const faqs = [
   },
 ];
 
+const homeWebPageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${site.url}/#webpage`,
+      url: site.url,
+      name: homeTitle,
+      description: homeDescription,
+      isPartOf: {
+        "@id": `${site.url}/#website`,
+      },
+      about: {
+        "@id": `${site.url}/#localbusiness`,
+      },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homeWebPageJsonLd),
+        }}
+      />
       <section className="relative flex min-h-[88vh] items-center overflow-hidden bg-brand-950">
         <Image
           src={px(7534282)}
@@ -432,20 +490,6 @@ export default function HomePage() {
       </section>
 
       <section className="bg-slate-50 py-16 md:py-24">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: faqs.map((f) => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
-            }),
-          }}
-        />
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <SectionHeading
             eyebrow="FAQs"
