@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 
 const siteTitle = "Bathroom remodeling Plano TX | Eco Bathroom Remodel";
 const siteDescription =
-  "Bathroom remodeling Plano TX made easy. Eco Bathroom Remodel delivers stylish, high-quality bathroom renovations tailored to your home and budget.";
+  "Bathroom remodeling in Plano, TX made easy. Call (972) 391-8227 for a free estimate on stylish, high-quality renovations built around your home.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -98,6 +98,8 @@ const siteJsonLd = {
       email: site.email,
       image: absoluteUrl("/images/modern-marble-walk-in-shower.webp"),
       priceRange: "$$",
+      foundingDate: "2014",
+      sameAs: ["https://www.facebook.com/share/1BknfByZkE/"],
       address: {
         "@type": "PostalAddress",
         streetAddress: site.address.street,
@@ -112,6 +114,21 @@ const siteJsonLd = {
         longitude: -96.7769,
       },
       openingHours: ["Mo-Sa 07:00-19:00"],
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ],
+          opens: "07:00",
+          closes: "19:00",
+        },
+      ],
       areaServed: site.serviceArea.map((a) => ({ "@type": "City", name: a })),
     },
   ],
