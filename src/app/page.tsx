@@ -11,6 +11,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import BlogCard from "@/components/BlogCard";
 import CtaSection from "@/components/CtaSection";
+import Testimonials from "@/components/Testimonials";
 import {
   PhoneIcon,
   CheckIcon,
@@ -437,6 +438,8 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
+
+      <Testimonials />
 
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-6 lg:grid-cols-2">

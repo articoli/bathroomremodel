@@ -29,6 +29,8 @@ export const services: Service[] = [
       "High-quality materials and professional workmanship",
       "Clear timeline and transparent, fixed pricing",
       "Licensed, insured, and local to Plano",
+      "Permits and inspections handled with the City of Plano",
+      "Water-saving fixtures that lower your utility bills",
     ],
     process: [
       {
@@ -67,12 +69,29 @@ export const services: Service[] = [
         q: "Can you work within my budget?",
         a: "Yes. We build our quotes around your budget and show you exactly where your money goes. We will suggest smart upgrades and honest alternatives where it counts.",
       },
+      {
+        q: "Will a full renovation increase my home's value in Plano?",
+        a: "Usually, yes, when the remodel fits the neighborhood. Updated bathrooms are one of the first things buyers notice, and in Plano's competitive market a modern primary bath can set your listing apart. The key is not over-improving: we help you pick finishes that match your home's price range. Read our realistic take on [bathroom remodel ROI in Plano](/bathroom-remodel-increase-home-value).",
+      },
+      {
+        q: "Do you handle permits with the City of Plano?",
+        a: "Yes. When plumbing, electrical, or structural changes are involved, we pull the required permits and coordinate inspections. You never deal with paperwork or city offices; it is part of our fixed-price quote.",
+      },
+      {
+        q: "How should I prepare my home before demo day?",
+        a: "Clear out the bathroom completely, including vanity contents and wall decor. Move anything fragile from adjoining rooms, since demolition creates vibration. We handle the rest: dust barriers, floor protection, and daily cleanup. Most families keep living at home normally throughout the project.",
+      },
     ],
     body: [
       "A complete bathroom renovation is the best way to turn a tired, outdated space into the most relaxing room in your [Plano home](/). Instead of patching problems one at a time, we remove the old bathroom down to the studs and rebuild it with modern plumbing, efficient fixtures, and finishes that match the way you actually live.",
       "Every renovation starts with understanding how you use the room. Do you need [double sinks and custom vanities](/custom-vanity-and-storage) for busy mornings? A larger shower for the family? A soaking tub to unwind after work? Your answers shape the layout, and we handle the rest, including demolition, plumbing rough-in, electrical, drywall, tile flooring, fixtures, and final cleanup.",
       "Because we're local to Plano, we know North Texas homes well: the builders, the common layouts, and the quirks that come with them. We also know how to protect your home while we work. Dust barriers, covered floors, daily cleanup, and respectful crews are all part of the job.",
       "The result is a bathroom that adds real value to your home, plus a remodeling experience you will actually enjoy telling your neighbors about. If you are weighing a full renovation against a lighter refresh, our guide to the [cost of a bathroom remodel in Plano](/cost-of-bathroom-remodel-in-plano-tx) is a good place to start.",
+    "A real renovation goes deeper than new tile. Behind the walls, we update what Plano's housing stock usually needs: corroded supply lines, outdated electrical, and venting that never met today's code. We pull permits with the City of Plano when the job calls for it and schedule inspections so nothing stalls your timeline. Our [plumbing and fixture upgrades](/plumbing-and-fixture-upgrades) crew handles every pipe we touch, so water pressure, drainage, and hot water delivery all improve along with the new look.",
+    "Many Plano homes were built between the 1970s and 1990s, and their bathrooms show it: cast-iron drains, single vanities, and tub-shower combos nobody chose on purpose. During demolition we often find slow leaks that have been feeding mold inside walls for years. Because we rebuild down to the studs, those hidden problems get fixed instead of tiled over, which is exactly why a full renovation protects your home's value instead of just decorating it.",
+    "Design choices matter for resale in Plano's market. We steer clients toward timeless palettes, large-format tile that makes small baths feel bigger, and storage that actually fits daily life. If you are dreaming bigger, our [master bathroom remodel ideas](/master-bathroom-remodel-ideas) walk through layouts Plano homeowners love, from double vanities to curbless showers.",
+    "Expect a clear schedule before we swing a hammer. A typical full renovation runs three to four weeks: demolition and rough plumbing first, then electrical and drywall, then waterproofing and tile, then fixtures and paint. Our [remodel timeline guide](/bathroom-remodel-timeline) breaks it down week by week so you always know what is happening in your home.",
+    "The eco in our name shows up in the details: WaterSense-labeled toilets and showerheads that cut water use by 20 percent or more, low-VOC paints and adhesives for healthier indoor air, LED [lighting and ventilation](/bathroom-lighting-and-ventilation) that fights Texas humidity, and responsible disposal of everything we tear out. You get lower utility bills and a bathroom that is easier on the planet.",
     ],
     relatedServices: ["tile-flooring-installation", "custom-vanity-and-storage", "bathroom-lighting-and-ventilation"],
     relatedPosts: ["cost-of-bathroom-remodel-in-plano-tx", "bathroom-remodel-timeline", "how-to-hire-bathroom-remodeler-plano", "bathroom-remodel-increase-home-value"],
@@ -91,6 +110,8 @@ export const services: Service[] = [
       "Low-maintenance surfaces that are simple to clean",
       "Removes a water-hazard risk, especially for older homeowners",
       "Completely customizable with tile, fixtures, and glass",
+      "Curbless and low-threshold entries for safer access",
+      "Epoxy grout and sealed surfaces that resist mold",
     ],
     process: [
       {
@@ -129,12 +150,29 @@ export const services: Service[] = [
         q: "Will the shower leak?",
         a: "No. We use a fully waterproofed shower system, including a solid pan, waterproof membrane behind the walls, and proper sealing. Every install is leak-tested before we finish.",
       },
+      {
+        q: "Will removing the tub hurt my home's resale value?",
+        a: "In most Plano homes with more than one full bathroom, no. Buyers prioritize a great primary shower over a rarely used tub, and a walk-in shower photographs beautifully. If your home has only one tub, talk to us first and we will give you an honest read on your specific situation.",
+      },
+      {
+        q: "Can you convert a tub to a shower in a small bathroom?",
+        a: "Absolutely, and small bathrooms benefit the most. Removing the tub's visual bulk and adding glass instead of a curtain can make a 5-by-8 bath feel noticeably bigger. See our [small bathroom remodel ideas](/small-bathroom-remodel-ideas) for more layout tricks.",
+      },
+      {
+        q: "Do I need new plumbing for the conversion?",
+        a: "Usually the supply lines can stay, but the drain almost always moves, and we often upgrade the valve to a modern pressure-balancing or thermostatic model while the wall is open. It is the cheapest time you will ever have to do it.",
+      },
     ],
     body: [
       "That bathtub you never use is taking up prime real estate in your bathroom. A tub to shower conversion replaces it with a walk-in shower that's safer, easier to clean, and far more useful for most Plano families. It's one of the most popular upgrades we install at [Eco Bathroom Remodel](/) in Plano.",
       "The conversion opens up the room visually and physically. With the bulky tub gone, you gain floor space, and a curbless or low-threshold design makes the shower accessible for kids, aging parents, and anyone with limited mobility. It's one of the most popular upgrades we install, and it often costs less than a full renovation.",
       "Safety is where we earn our reputation. A shower is only as good as its waterproofing, and we build every one with a solid pan, a waterproof membrane, and proper sealing around fixtures and glass. Water belongs in the shower, not in your walls or under your floors. A [frameless glass enclosure](/glass-enclosure-installations) is the perfect finish for most conversions.",
       "We will help you pick from tiled shower walls, premium acrylic panels, frameless glass, rainfall heads, built-in seating, and niche shelving, all designed exactly for your Plano home. Curious if a conversion is right for you? Read our breakdown of the [benefits of tub to shower conversions](/tub-to-shower-conversion-benefits).",
+    "Most conversions take about one to two weeks from demolition to final caulk, and they typically cost less than a full bathroom renovation because the footprint stays the same. You keep your existing layout while gaining a shower built with modern waterproofing from the pan up. For many families it is the highest-impact upgrade per dollar.",
+    "In Plano's slab-foundation homes, the tub drain rarely sits where a shower drain wants to be. Moving it means cutting concrete, re-routing pipe, and patching the slab, work our licensed [plumbing crew](/plumbing-and-fixture-upgrades) does in-house. We also check venting and water lines while the floor is open, so you do not pay to open it twice.",
+    "If aging in place matters to your household, ask about a curbless entry. With no threshold to step over and an optional bench and grab bars, the shower stays usable for decades. Our [accessibility modifications](/accessibility-modifications) page covers the full range of safer-bathroom options.",
+    "The enclosure makes or breaks the finished look. Frameless glass keeps sightlines open so even a compact bathroom feels larger, while semi-frameless options trim the budget without looking cheap. Either way, we measure after tile is set so every panel fits to the sixteenth of an inch.",
+    "Choose your surfaces with cleaning in mind. Large-format porcelain with minimal grout lines wipes down in minutes, and epoxy grout resists staining far better than standard cement grout. Skip the all-glass-everything look if hard water spots drive you crazy; a half wall of tile hides the worst of it.",
     ],
     relatedServices: ["shower-installations-replacements", "glass-enclosure-installations", "accessibility-modifications"],
     relatedPosts: ["tub-to-shower-conversion-benefits", "small-bathroom-remodel-ideas", "walk-in-shower-vs-bathtub"],
@@ -153,6 +191,8 @@ export const services: Service[] = [
       "Replacements that stop leaks and hidden mold",
       "Custom sizes for awkward or angled spaces",
       "Increased home resale value",
+      "Every pan flood-tested before tile goes on",
+      "Subfloor and framing inspected and repaired, never covered up",
     ],
     process: [
       {
@@ -191,12 +231,29 @@ export const services: Service[] = [
         q: "How long does a shower replacement take?",
         a: "Most replacements take about one to two weeks, including waterproofing, tile, and fixtures.",
       },
+      {
+        q: "Tile shower vs. acrylic unit: which lasts longer?",
+        a: "A properly built tile shower lasts decades and can be repaired section by section; acrylic units are cheaper and faster to install but harder to repair and easier to scratch. For a primary bathroom you plan to keep, tile wins. For a quick rental refresh, acrylic makes sense.",
+      },
+      {
+        q: "Do you repair the subfloor if you find rot?",
+        a: "Yes, and we tell you before we do it. Once the old pan comes out, we inspect the subfloor and framing. If there is rot or mold, we show you photos, explain the fix, and price it fairly. Covering it up is never an option.",
+      },
+      {
+        q: "Why is my water pressure low in the shower?",
+        a: "Common culprits are mineral-clogged showerheads, failing valves, and corroded supply pipes, all frequent in North Texas homes with hard water. During a replacement we diagnose the real cause instead of just swapping the head and hoping.",
+      },
     ],
     body: [
       "If your shower is leaking, grout is cracking, or the water pressure has quietly dropped, it may be time for a replacement. [Eco Bathroom Remodel](/) in Plano installs and replaces showers with a level of craft that makes the room feel brand new.",
       "The difference between a good shower and a great one is what's behind the tile. We build every shower with a proper slope to the drain, a fully waterproofed pan, and a waterproof membrane on the walls. That foundation is why our showers still look and perform great years later. If you are replacing a failed install, our article on [common bathroom remodel mistakes](/common-bathroom-remodel-mistakes) explains what to look for.",
       "Design choices matter too. We will work with you on tile size and layout, accent bands, niches for your shampoo, built-in benches, and [lighting](/bathroom-lighting-and-ventilation) that turns a routine shower into a daily ritual. Our team handles every trade in-house, so there's no finger-pointing between subcontractors, just one accountable crew.",
       "Whether you're replacing a failing unit or installing your dream shower from scratch, we deliver a waterproof, beautiful, and durable result. Finish it off with a custom glass enclosure for a clean, modern look.",
+    "Some showers fail loudly, with water dripping through the ceiling below. Most fail quietly: grout that never quite dries, a musty smell you blame on humidity, tiles that sound hollow when tapped. By the time the damage is visible, water has usually been migrating for months. If your shower is over 15 years old, an inspection is cheap insurance.",
+    "The pan is the part you will never see and should never think about again. We build traditional mud-set pans with waterproof membranes for custom shapes, and use high-quality prefabricated bases where they fit the design. Either way, every pan gets flood-tested: we fill it, mark the waterline, and verify it holds before a single tile goes on.",
+    "Weak pressure is rarely just the showerhead. Corroded supply lines, a failing valve, or a clogged cartridge can all choke flow, and North Texas hard water accelerates the buildup. During replacement we evaluate the whole supply path and install modern [plumbing and fixtures](/plumbing-and-fixture-upgrades) sized for strong, even pressure.",
+    "Tile choice is a durability choice. Porcelain beats ceramic for shower walls, and small mosaics grip better on shower floors than large tiles. For layout inspiration, our guide to [choosing bathroom tile](/how-to-choose-bathroom-tiles) covers sizes, finishes, and grout.",
+    "A new shower in a poorly ventilated bathroom will grow mold no matter how well it is built. We check your exhaust fan's capacity during every replacement and recommend an upgrade when the math says the room needs it. Our [mold prevention guide](/prevent-mold-and-mildew-bathroom) explains the daily habits that protect your investment.",
     ],
     relatedServices: ["tub-to-shower-conversion", "glass-enclosure-installations", "plumbing-and-fixture-upgrades"],
     relatedPosts: ["tub-to-shower-conversion-benefits", "bathroom-lighting-guide", "walk-in-shower-vs-bathtub"],

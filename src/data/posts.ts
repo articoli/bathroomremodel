@@ -62,6 +62,33 @@ export const posts: Post[] = [
         ],
       },
       {
+        heading: "Hidden Costs That Surprise Plano Homeowners",
+        paragraphs: [
+          "The quote covers what we can see. What surprises homeowners is what we find after demolition: rotted subfloor under a leaking pan, cast-iron drains past their lifespan, or a vent fan exhausting into the attic instead of outside. None of these are rare in North Texas homes, and fixing them is not optional if you want the remodel to last.",
+          "Two more budget items people forget: permits and inspections, which the City of Plano requires for plumbing and electrical changes, and HOA approvals, which some Plano neighborhoods require before work starts. A reputable contractor includes both in the plan and the price, not as surprise add-ons mid-project.",
+        ],
+      },
+      {
+        heading: "Why One Quote Is Higher Than Another",
+        paragraphs: [
+          "If you collect three quotes and one is dramatically lower, compare the scope line by line, not just the bottom number. Cheap quotes often hide vague allowances (\"tile: $500\") that balloon later, skip waterproofing details, or assume subcontractors you will never meet. Our quotes are fixed-price and itemized, so the number we give is the number you pay.",
+          "Also ask who does the work. Companies that run their own licensed crews, like ours, cost a little more than a generalist juggling day labor, but you get consistent quality and one accountable team. Ask every bidder: who will be in my home, and who do I call if something goes wrong?",
+        ],
+      },
+      {
+        heading: "Smart Ways to Save Without Cutting Corners",
+        paragraphs: [
+          "You can trim thousands without touching quality. Keep the existing layout so plumbing stays put, choose mid-range fixtures from reliable brands instead of designer labels, and pick porcelain that mimics marble rather than the real stone. None of these choices show up as compromises in the finished room.",
+          "The biggest money saver is deciding everything before demolition starts. Change orders mid-project are the number one budget killer in remodeling. During our free consultation we lock your layout, materials, and fixtures into the written quote, so there is nothing left to decide under pressure.",
+        ],
+        list: [
+          "Keep plumbing where it is unless the layout truly does not work",
+          "Choose porcelain over natural stone for the same look at half the price",
+          "Finalize every material before demo day to avoid change orders",
+          "Bundle the exhaust fan and lighting upgrades into the same project",
+        ],
+      },
+      {
         heading: "Get a Real Number",
         paragraphs: [
           "Every home is different. The best way to get an accurate number is a free in-home estimate from [Eco Bathroom Remodel](/) in Plano, where we can measure your space, see the existing plumbing and structure, and talk through your goals. Call us at (972) 391-8227 to schedule yours.",
@@ -1029,6 +1056,120 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "bathroom-remodel-financing-texas",
+    title: "Bathroom Remodel Financing in Texas: 5 Ways Plano Homeowners Pay for Renovations",
+    excerpt:
+      "From savings to home equity to renovation loans: the realistic ways Texas homeowners fund a bathroom remodel, and how to pick the right one.",
+    date: "2026-09-29",
+    readTime: "8 min read",
+    image: 6890406,
+    category: "Planning",
+    relatedServices: ["complete-bathroom-renovations", "tub-to-shower-conversion"],
+    relatedPosts: ["cost-of-bathroom-remodel-in-plano-tx", "bathroom-remodel-timeline", "how-to-hire-bathroom-remodeler-plano"],
+    body: [
+      {
+        paragraphs: [
+          "A bathroom remodel in Plano can run from a few thousand dollars for a refresh to $45,000 or more for a luxury master bath. Most homeowners do not pay cash for the whole thing, and that is perfectly fine. What matters is picking a funding method whose monthly cost you are comfortable with. Here are the five most common ways Texas families pay for renovations, with the honest trade-offs of each.",
+        ],
+      },
+      {
+        heading: "1. Cash and Savings",
+        paragraphs: [
+          "The simplest option: pay from savings and owe nobody anything. No interest, no applications, no monthly payment hanging over the finished bathroom. It works best for smaller projects under $10,000, like a [tub-to-shower conversion](/tub-to-shower-conversion) or a fixture and lighting refresh.",
+          "The downside is opportunity cost. Draining your emergency fund for a remodel leaves you exposed if the water heater dies the next month. A good rule: never let the project take your savings below three months of expenses.",
+        ],
+      },
+      {
+        heading: "2. Home Equity Loan or HELOC",
+        paragraphs: [
+          "The most popular route for mid-range and larger remodels. You borrow against the equity in your home, usually at far lower rates than credit cards. Texas has one quirk worth knowing: state law caps home equity borrowing at 80 percent of your home's appraised value, so you need solid equity to qualify.",
+          "A home equity loan gives you a lump sum with fixed payments, ideal when you have a fixed-price quote in hand. A HELOC works more like a credit card you draw from as work progresses. Interest on either may be tax-deductible when the money funds home improvements, but confirm that with your tax advisor.",
+        ],
+      },
+      {
+        heading: "3. FHA 203(k) and Renovation Loans",
+        paragraphs: [
+          "Buying a Plano home that needs work? Renovation loans like the FHA 203(k) roll the purchase price and the remodel budget into a single mortgage. The streamlined 203(k) covers smaller jobs up to $35,000 with less paperwork than the full version.",
+          "These loans take longer to close and involve more inspections, so they suit buyers planning ahead, not emergency repairs. If you are already in your home, a cash-out refinance can serve a similar purpose when rates make sense.",
+        ],
+      },
+      {
+        heading: "4. Contractor Payment Schedules",
+        paragraphs: [
+          "How you pay your contractor matters as much as how you fund the project. Reputable remodelers work from a fixed-price quote with payments tied to milestones: a modest deposit, progress payments as phases complete, and a final payment only when you approve the finished work.",
+          "Red flags to walk away from: demands for 50 percent or more upfront, cash-only deals, or vague \"allowances\" instead of fixed numbers. Our quotes spell out the full price and the payment schedule in writing before demolition starts, so there are no surprises on either side.",
+        ],
+      },
+      {
+        heading: "5. Credit Cards (Small Updates Only)",
+        paragraphs: [
+          "A credit card can make sense for a $2,000 lighting and fixture refresh that you will pay off in a month or two, especially with a 0 percent introductory offer. For a $25,000 renovation at 20 percent APR, it is one of the most expensive ways to borrow.",
+          "If you go this route, do the math first: divide the balance by the months in the promo period and make sure that payment fits your budget. Miss the window and the deferred interest can be brutal.",
+        ],
+      },
+      {
+        heading: "How to Choose",
+        paragraphs: [
+          "Match the method to the project size. Under $10,000, savings or a short-term 0 percent card usually wins. From $10,000 to $40,000, home equity is hard to beat on rate. Above that, compare a HELOC against a cash-out refinance with your lender.",
+          "Whatever route you choose, start with a fixed-price quote so you are financing the real number, not a guess. Call [Eco Bathroom Remodel](/) at (972) 391-8227 for a free in-home estimate in Plano, and check our [2026 cost guide](/cost-of-bathroom-remodel-in-plano-tx) to see where your project is likely to land.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tile-vs-lvp-bathroom-flooring-texas",
+    title: "Tile vs. Luxury Vinyl Plank in Bathrooms: What Holds Up in Texas Humidity",
+    excerpt:
+      "Porcelain tile vs. LVP for bathroom floors: cost, water resistance, and how each handles North Texas humidity. An honest comparison from local installers.",
+    date: "2026-09-22",
+    readTime: "7 min read",
+    image: 8583810,
+    category: "Materials",
+    relatedServices: ["tile-flooring-installation", "complete-bathroom-renovations"],
+    relatedPosts: ["how-to-choose-bathroom-tiles", "prevent-mold-and-mildew-bathroom", "water-saving-bathroom-upgrades"],
+    body: [
+      {
+        paragraphs: [
+          "Walk into any flooring store and you will hear two pitches: tile people swear by porcelain, and the vinyl aisle promises waterproof everything at half the price. Both can work in a bathroom, but they fail in different ways, and Texas humidity punishes the wrong choice. Here is how we advise Plano homeowners when they ask.",
+        ],
+      },
+      {
+        heading: "Porcelain Tile: The Gold Standard",
+        paragraphs: [
+          "Porcelain is essentially waterproof, shrugs off standing water, and lasts decades when installed over a proper substrate. It stays cool underfoot, which most Texans appreciate nine months of the year, and it handles steam, splashes, and mopping without complaint.",
+          "The trade-offs are cost and comfort. Tile installation runs significantly higher than LVP because of the labor: substrate prep, mortar, grout, and sealing. It is also hard and cold in winter, though a bath mat solves most of that. For shower floors and full bathrooms, tile remains our default recommendation, and our [tile flooring installation](/tile-flooring-installation) page covers the process.",
+        ],
+      },
+      {
+        heading: "Luxury Vinyl Plank: The Practical Challenger",
+        paragraphs: [
+          "Modern LVP with a stone-plastic composite (SPC) core is 100 percent waterproof, warmer and softer underfoot than tile, and installs faster, which keeps labor costs down. For a powder room or a kids' bathroom on a budget, it is a legitimate option.",
+          "The downsides show up over time. LVP can dent under heavy vanities, sharp grit can scratch the wear layer, and in extreme heat the planks can expand and lift at the seams. Expect 10 to 20 years of service versus decades from tile. And it should never go inside a shower pan area, no matter what the box claims.",
+        ],
+      },
+      {
+        heading: "The Texas Humidity Factor",
+        paragraphs: [
+          "North Texas humidity is the real test. Tile with epoxy grout is the most mold-resistant combination you can put on a bathroom floor; there is simply nothing organic for mold to eat. LVP performs fine too, but only over a properly prepped, dry subfloor. Trapped moisture under vinyl is a mold farm waiting to happen.",
+          "Honestly, ventilation matters more than the material. An undersized exhaust fan will grow mold on any floor. During our remodels we size the fan to the room, and our [mold prevention guide](/prevent-mold-and-mildew-bathroom) covers the daily habits that protect your investment.",
+        ],
+      },
+      {
+        heading: "Our Recommendation",
+        paragraphs: [
+          "For full bathrooms and anywhere near the shower or tub, choose porcelain tile. The upfront cost buys you decades of trouble-free service. For a half bath or powder room on a concrete slab, quality SPC vinyl is a reasonable way to save money without meaningful risk.",
+          "Either way, the installation matters more than the material. A bad tile job leaks and a bad vinyl job buckles. If you are comparing options for your Plano home, call [Eco Bathroom Remodel](/) at (972) 391-8227 and we will give you an honest recommendation for your specific bathroom, not a sales pitch.",
+        ],
+        list: [
+          "Full baths and wet areas: porcelain tile, always",
+          "Powder rooms on slab: SPC vinyl is a fair budget choice",
+          "Never install LVP inside a shower pan or curb",
+          "Size the exhaust fan to the room, regardless of flooring",
+        ],
+      },
+    ],
+  },
 ];
 
 export const postSeo: Record<string, string> = {
@@ -1047,6 +1188,8 @@ export const postSeo: Record<string, string> = {
   "master-bathroom-remodel-ideas": "Master Bathroom Remodel Ideas: Plan a Suite You'll Use",
   "prevent-mold-and-mildew-bathroom": "How to Prevent Mold and Mildew in Your Bathroom",
   "bathroom-remodel-increase-home-value": "Does a Bathroom Remodel Increase Home Value?",
+  "bathroom-remodel-financing-texas": "Bathroom Remodel Financing in Texas: 5 Options",
+  "tile-vs-lvp-bathroom-flooring-texas": "Tile vs. LVP Bathroom Flooring: Texas Guide",
 };
 
 export function getPost(slug: string) {
