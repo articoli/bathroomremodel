@@ -28,7 +28,7 @@ import {
 
 const homeTitle = "Bathroom remodeling Plano TX | Eco Bathroom Remodel";
 const homeDescription =
-  "Bathroom remodeling Plano TX made easy. Eco Bathroom Remodel delivers stylish, high-quality bathroom renovations tailored to your home and budget.";
+  "Bathroom remodeling in Plano, TX made easy. Call (972) 391-8227 for a free estimate on stylish, high-quality renovations built around your home.";
 
 export const metadata: Metadata = {
   title: {
